@@ -1,0 +1,52 @@
+
+#header_height{
+    height:80px;
+}
+#parent{
+    position: relative;
+    margin-left:20px;
+}
+#anli_pic>img{
+    margin-top:20px;
+
+}
+.pic_tit{
+    width:300px;
+    position: absolute;
+    top:20px;
+    right:50px;
+    color:#c3e54b;
+    text-align: justify;
+
+}
+.pic_tit p{
+   margin-top:20px;
+}
+#center{
+    position: absolute;
+    top:530px;
+    right:60px;
+    display: flex;
+    color: rgb(146, 141, 141);
+}
+#center .prev{
+    margin-right:40px;
+}
+#center a{
+    color:#4d5a58;
+}
+#center a:hover{
+    color:#c3e54b;
+}
+.img{
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    top:600px;
+    right:30px;
+}
+.img>img{
+    margin-top:10px;
+}

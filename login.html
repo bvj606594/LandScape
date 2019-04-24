@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<header>
+			<div id="header">
+					<!-- LOGO-->
+					<div class="d_logo">
+						<a href="#">
+							<img src="../images/eadg_files/logo.png"  class="logo">
+						</a>
+					</div>
+					<!-- 标题 -->
+					<div  class="d_table" >
+						<ul class="table">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="#floor_1f">关于我们</a></li>
+							<li class="erji_parent"><a href="#floor_2f">项目案例</a>
+								<ul class="erji">
+									<li><a href="#">景观设计</a></li>
+									<li><a href="#">建筑设计</a></li>
+									<li><a href="#">城乡规划</a></li>
+									<li><a href="#">生态环境</a></li>
+								</ul>
+							</li>
+							<li><a href="#news_d">新闻动态</a></li>
+							<li><a href="#">加入我们</a></li>
+							<li><a href="#">商店</a></li>
+							<li><a href="reg.html">注册</a></li>
+							<li><a href="#">登录</a></li>
+						</ul>
+					</div>
+					
+				</div>
+	</header>
+	<section>
+		<div id="section_d">
+			<div>
+				<div id="list_bg">
+					<ul>
+						<li class="list_1">
+							<h1>欢迎回来</h1>
+							<p><a href="reg.html">注册EADG</a></p>
+						</li>
+						<li>
+							<hr style="width:320px;">
+						</li>
+						<li><p>用户名称:</p>
+							<input type="text" id="uname" placeholder="请输入6~16位用户名">
+						</li>
+						<li ><p>用户密码:</p>
+							<input type="password" id="upwd" placeholder="请输入6~16位密码">
+						</li>
+						<li id="mima">
+							<input type="checkbox" id="rem"><label for="rem">记住密码</label>
+							<a href="#">忘记密码</a>
+						</li>
+						<li class="last_child">
+								<a href="#" onclick="get_login()">登录</a>
+						</li>
+					</ul>
+					
+					<!-- <div>
+						<p>用户名称:</p>
+						<input type="text" id="uname">
+					</div>
+					<div>
+						<p>用户密码:</p>
+						<input type="password" id="upwd">
+					</div>
+					<a href="#" onclick="get_login()">登录</a> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+			<div id="footer_d">
+					<div class="footer_d_ul">	
+						<ul >
+							<li class="ul_li1">
+								<h4>关于我们</h4>
+								<ul>
+									<li>
+										<a href="#">公司介绍</a>
+									</li>
+									<li>
+										<a href="#">设计理念</a>
+									</li>
+									<li>
+										<a href="#">发展历史</a>
+									</li>
+									<li>
+										<a href="#">服务项目</a>
+									</li>
+									<li>
+										<a href="#">所有荣誉</a>
+									</li>
+									<li>
+										<a href="#">联系我们</a>
+									</li>
+								</ul>
+							</li>
+							<li class="ul_li1">
+								<h4>项目案例</h4>
+								<ul>
+									<li>
+										<a href="#">规划及城市设计</a>
+									</li>
+									<li>
+										<a href="#">城市综合开发</a>
+									</li>
+									<li>
+										<a href="#">文旅及特色小镇</a>
+									</li>
+									<li>
+										<a href="#">公共开放空间</a>
+									</li>
+									<li>
+										<a href="#">主题乐园</a>
+									</li>
+									<li>
+										<a href="#">酒店景观</a>
+									</li>
+									<li>
+										<a href="#">商业及办公</a>
+									</li>
+									<li>
+										<a href="#">住宅景观</a>
+									</li>
+								</ul>
+							</li>
+							<li class="ul_li1">
+								<h4>新闻动态</h4>
+								<ul>
+									<li>
+										<a href="#">公司新闻</a>
+									</li>
+									<li>
+										<a href="#">合作伙伴</a>
+									</li>
+								</ul>
+							</li>
+							<li class="ul_li1">
+								<h4>加入我们</h4>
+								<ul>
+									<li>
+										<a href="#">用人理念</a>
+									</li>
+									<li>
+										<a href="#">招聘岗位</a>
+									</li>
+								</ul>
+							</li>
+							<li class="ul_li1">
+								<h4>商店</h4>
+								<ul>
+									<li>
+										<a href="#">出版物</a>
+									</li>
+								</ul>
+							</li>
+							<li class="ul_li1">
+								<h4>集团相关</h4>
+								<ul>
+									<li>
+										<a href="#">泛亚泰迪</a>
+									</li>
+									<li>
+										<a href="#">泛亚国贸</a>
+									</li>
+									<li>
+										<a href="#">泛亚泰廊</a>
+									</li>
+								</ul>
+							</li>
+							
+						</ul>
+					</div>
+					<table></table>
+					<div id="footer_pic">
+						<img src="../images/index/wx.jpg" alt="微信">
+						<img src="../images/index/facebook.jpg" alt="微信">
+					</div>
+				</div>
+				<p id="footer_copy">Copyright&nbsp; &copy; &nbsp;2019&nbsp; EADG&nbsp; All&nbsp; Rights Reserved&nbsp; 版权所有 &nbsp;沪ICP备12000436号</p>
+	</footer>	
+	<script>
+		function get_login(){
+			var xhr=new XMLHttpRequest();
+			xhr.onreadystatechange=function(){
+				if (xhr.readyState==4 && xhr.status==200){
+					var result=xhr.responseText
+					if (result=="1"){
+						alert("登陆成功")
+						location.href="http://127.0.0.1:8080/index.html";
+					}else if(result=="0"){
+						alert("登陆失败,请检查用户名/密码")
+						location.href="http://127.0.0.1:8080/login.html";
+					}
+				}
+			}
+			xhr.open("post","/user/login",true);
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+			var framdata="uname="+uname.value+"&upwd="+upwd.value;
+			xhr.send(framdata);
+		}
+	</script>
+</body>
+</html>
